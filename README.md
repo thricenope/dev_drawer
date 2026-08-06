@@ -1,4 +1,4 @@
-# Skills Note · 个人收藏夹
+# dev_drawer · 开发者的抽屉
 
 一个 md + html 双轨的个人收藏夹：**md 用来手记，html 用来浏览**。两边目录结构镜像对应，文件名一致，方便对照维护。最终部署到 GitHub Pages。
 
@@ -85,7 +85,7 @@ source: notes/skills/frontend/xxx.md    # 本文件相对路径
 ## 目录结构
 
 ```
-skills_note/
+dev_drawer/
 ├── README.md                      # 本文件
 ├── index.html                     # 极简卡片看板（静态，双击即开）
 ├── .github/workflows/deploy.yml   # GitHub Pages 自动部署
