@@ -117,6 +117,138 @@
 }
 
 /* ============================================================
+   以下 6 个主题配色取自 ui-ux-pro-max-skill 的设计数据库
+   (design/data/logo/colors.csv)，按心理学维度精选适合
+   「收藏夹」气质的方案。每套都保留原始色名和心理关键词。
+   ============================================================ */
+
+/* —— sage：Sage Green 鼠尾草绿（沉静·自然·成熟）—— */
+[data-theme="sage"]{
+  --bg:#f5f5f0;
+  --bg-grad:radial-gradient(circle at 30% 10%, #fbfbf6 0, #f0f0e8 100%);
+  --card:#ffffff;
+  --card-alt:#f1f3ec;
+  --card-alt2:#e8ece2;
+  --card-alt3:#f6f2e8;
+  --text:#3d4f39;
+  --muted:#7a8a72;
+  --accent:#9CAF88;
+  --accent-soft:#eef1e9;
+  --border:#dce4d3;
+  --title-font:Georgia,"Songti SC",serif;
+  --body-font:-apple-system,"PingFang SC",sans-serif;
+  --card-shadow:0 2px 8px rgba(61,79,57,.07);
+  --card-rotate:0;
+  --radius:10px;
+  --sidebar-bg:rgba(156,175,136,.06);
+}
+
+/* —— ocean：Ocean Deep 海洋深蓝（平静·深邃·可信）—— */
+[data-theme="ocean"]{
+  --bg:#eaf4f8;
+  --bg-grad:linear-gradient(180deg,#eaf4f8 0,#d8ebf2 100%);
+  --card:#ffffff;
+  --card-alt:#e3f1f7;
+  --card-alt2:#d4e9f1;
+  --card-alt3:#eaf6fb;
+  --text:#023e8a;
+  --muted:#5a7a92;
+  --accent:#0077B6;
+  --accent-soft:#d6ecf5;
+  --border:#bcd9e6;
+  --title-font:"Avenir Next","Helvetica Neue","PingFang SC",sans-serif;
+  --body-font:"Avenir Next","Helvetica Neue","PingFang SC",sans-serif;
+  --card-shadow:0 2px 10px rgba(2,62,138,.08);
+  --card-rotate:0;
+  --radius:12px;
+  --sidebar-bg:rgba(0,119,182,.05);
+}
+
+/* —— terracotta：Terracotta Earth 陶土赤（踏实·温暖·手作）—— */
+[data-theme="terracotta"]{
+  --bg:#fbf3eb;
+  --bg-grad:radial-gradient(circle at 70% 20%, #fdf6ee 0, #f5e8d8 100%);
+  --card:#fffaf2;
+  --card-alt:#f5e8d5;
+  --card-alt2:#efe0cc;
+  --card-alt3:#faedd9;
+  --text:#431407;
+  --muted:#8a6a52;
+  --accent:#9A3412;
+  --accent-soft:#f3e0d0;
+  --border:#e0cdb4;
+  --title-font:"Georgia","Songti SC",serif;
+  --body-font:-apple-system,"PingFang SC",sans-serif;
+  --card-shadow:0 2px 8px rgba(67,20,7,.08);
+  --card-rotate:0;
+  --radius:8px;
+  --sidebar-bg:rgba(154,52,18,.05);
+}
+
+/* —— periwinkle：Periwinkle Dream 长春花（梦幻·温柔·创意）—— */
+[data-theme="periwinkle"]{
+  --bg:#f8f8ff;
+  --bg-grad:radial-gradient(circle at 40% 15%, #fbfbff 0, #efeffb 100%);
+  --card:#ffffff;
+  --card-alt:#f0f0fc;
+  --card-alt2:#e8e8f8;
+  --card-alt3:#f5f0ff;
+  --text:#2e2e5c;
+  --muted:#7a7aa8;
+  --accent:#8B5CF6;
+  --accent-soft:#ede8fc;
+  --border:#d8d8ee;
+  --title-font:"Avenir Next","Helvetica Neue","PingFang SC",sans-serif;
+  --body-font:"Avenir Next","Helvetica Neue","PingFang SC",sans-serif;
+  --card-shadow:0 3px 12px rgba(139,92,246,.08);
+  --card-rotate:0;
+  --radius:16px;
+  --sidebar-bg:rgba(139,92,246,.04);
+}
+
+/* —— darkacademia：Dark Academia 暗黑学院（学究·复古·智识）—— */
+[data-theme="darkacademia"]{
+  --bg:#1a1612;
+  --bg-grad:radial-gradient(circle at 25% 15%, #221d17 0, #14110d 100%);
+  --card:#241e18;
+  --card-alt:#2a2319;
+  --card-alt2:#1f1a14;
+  --card-alt3:#262019;
+  --text:#deb887;
+  --muted:#9a8560;
+  --accent:#c9a961;
+  --accent-soft:rgba(201,169,97,.12);
+  --border:#3d3326;
+  --title-font:"Georgia","Times New Roman","Songti SC",serif;
+  --body-font:"Georgia","Songti SC",serif;
+  --card-shadow:0 4px 16px rgba(0,0,0,.4);
+  --card-rotate:0;
+  --radius:4px;
+  --sidebar-bg:rgba(201,169,97,.04);
+}
+
+/* —— slate：Slate Professional 石板灰（专业·克制·现代）—— */
+[data-theme="slate"]{
+  --bg:#f5f5f5;
+  --bg-grad:linear-gradient(180deg,#f8f8f8 0,#ececec 100%);
+  --card:#ffffff;
+  --card-alt:#f0f1f2;
+  --card-alt2:#e8eaec;
+  --card-alt3:#f4f5f6;
+  --text:#1c1c1c;
+  --muted:#6b7785;
+  --accent:#2F4F4F;
+  --accent-soft:#e3e7e7;
+  --border:#d0d5da;
+  --title-font:"Helvetica Neue","PingFang SC",sans-serif;
+  --body-font:"Helvetica Neue","PingFang SC",sans-serif;
+  --card-shadow:0 1px 4px rgba(0,0,0,.05);
+  --card-rotate:0;
+  --radius:8px;
+  --sidebar-bg:#ffffff;
+}
+
+/* ============================================================
    基础
    ============================================================ */
 *{box-sizing:border-box}
@@ -173,20 +305,58 @@ a:hover{text-decoration:underline}
 }
 .topbar .brand{font-family:var(--title-font);font-size:20px;font-weight:700;margin:0}
 .topbar .brand .dot{color:var(--accent)}
-.theme-switcher{display:flex;gap:6px;align-items:center}
-.theme-dot{
-  width:26px;height:26px;border-radius:50%;border:2px solid var(--border);
-  cursor:pointer;transition:transform .15s,border-color .15s;
-  display:inline-flex;align-items:center;justify-content:center;
-  font-size:13px;
+.theme-switcher{position:relative}
+.theme-trigger{
+  display:inline-flex;align-items:center;gap:8px;cursor:pointer;
+  padding:6px 12px;border:1px solid var(--border);border-radius:8px;
+  background:var(--card);color:var(--text);font-size:13px;font-family:inherit;
+  transition:border-color .15s;
 }
-.theme-dot:hover{transform:scale(1.15)}
-.theme-dot.active{border-color:var(--accent);transform:scale(1.15)}
-.theme-dot[data-t="sticky"]{background:#fff7c2}
-.theme-dot[data-t="paper"]{background:#fdf6e3}
-.theme-dot[data-t="morandi"]{background:#d5d0db}
-.theme-dot[data-t="neon"]{background:#161628;color:#00ffc8}
-.theme-dot[data-t="clean"]{background:#ffffff}
+.theme-trigger:hover{border-color:var(--accent)}
+.theme-trigger .swatch{
+  width:16px;height:16px;border-radius:4px;border:1px solid var(--border);
+  background:linear-gradient(135deg,#fff7c2,#ffd9d9,#cdebc8);
+}
+.theme-trigger .caret{font-size:10px;transition:transform .2s}
+.theme-switcher.open .theme-trigger .caret{transform:rotate(180deg)}
+.theme-panel{
+  position:absolute;top:calc(100% + 8px);right:0;z-index:60;
+  min-width:280px;background:var(--card);border:1px solid var(--border);
+  border-radius:12px;box-shadow:0 12px 32px rgba(0,0,0,.15);
+  padding:14px;display:none;
+}
+.theme-switcher.open .theme-panel{display:block;animation:pop .18s ease}
+.theme-panel-group{margin-bottom:12px}
+.theme-panel-group:last-child{margin-bottom:0}
+.theme-panel-title{
+  font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;
+  color:var(--muted);margin:0 0 8px;padding:0 4px;
+}
+.theme-panel-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.theme-opt{
+  display:flex;align-items:center;gap:8px;padding:7px 9px;border-radius:8px;
+  cursor:pointer;border:1px solid transparent;transition:all .12s;
+  font-size:13px;color:var(--text);
+}
+.theme-opt:hover{background:var(--accent-soft)}
+.theme-opt.active{background:var(--accent-soft);border-color:var(--accent);color:var(--accent);font-weight:600}
+.theme-opt .dot{
+  width:18px;height:18px;border-radius:5px;flex-shrink:0;border:1px solid var(--border);
+}
+.theme-opt .name{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.theme-opt .emoji{font-size:14px}
+/* 各主题色块预览 */
+.theme-opt[data-t="sticky"] .dot{background:#fff7c2}
+.theme-opt[data-t="paper"] .dot{background:#fdf6e3}
+.theme-opt[data-t="morandi"] .dot{background:#d5d0db}
+.theme-opt[data-t="neon"] .dot{background:#161628}
+.theme-opt[data-t="clean"] .dot{background:#ffffff}
+.theme-opt[data-t="sage"] .dot{background:#9CAF88}
+.theme-opt[data-t="ocean"] .dot{background:#0077B6}
+.theme-opt[data-t="terracotta"] .dot{background:#9A3412}
+.theme-opt[data-t="periwinkle"] .dot{background:#8B5CF6}
+.theme-opt[data-t="darkacademia"] .dot{background:#241e18}
+.theme-opt[data-t="slate"] .dot{background:#2F4F4F}
 
 /* ============================================================
    布局
@@ -320,6 +490,36 @@ a:hover{text-decoration:underline}
   opacity:.6;
 }
 
+/* sage：左侧叶脉细线 + 微暖卡 */
+[data-theme="sage"] .card{border-left:3px solid var(--accent)}
+[data-theme="sage"] .card:nth-child(even){background:var(--card-alt)}
+
+/* ocean：顶部细蓝条 + 层次感 */
+[data-theme="ocean"] .card{border-top:3px solid var(--accent)}
+[data-theme="ocean"] .card:nth-child(3n+2){background:var(--card-alt)}
+[data-theme="ocean"] .card:nth-child(3n){background:var(--card-alt2)}
+
+/* terracotta：手作感粗边 + 暖色交替 */
+[data-theme="terracotta"] .card{border:1px solid var(--border);border-left:4px solid var(--accent)}
+[data-theme="terracotta"] .card:nth-child(even){background:var(--card-alt)}
+
+/* periwinkle：大圆角柔影 + 渐变标题色 */
+[data-theme="periwinkle"] .card{border:none}
+[data-theme="periwinkle"] .card-title{background:linear-gradient(135deg,var(--accent),#C4B5FD);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+[data-theme="periwinkle"] .card:nth-child(3n+1){background:var(--card)}
+[data-theme="periwinkle"] .card:nth-child(3n+2){background:var(--card-alt)}
+[data-theme="periwinkle"] .card:nth-child(3n){background:var(--card-alt2)}
+
+/* darkacademia：羊皮纸卡 + 金色发丝线 + 书脊感 */
+[data-theme="darkacademia"] .card{border:1px solid var(--border);border-left:3px solid var(--accent)}
+[data-theme="darkacademia"] .card-title{letter-spacing:.02em}
+[data-theme="darkacademia"] .card-foot{border-top-color:var(--border)}
+[data-theme="darkacademia"] .link-btn::before{content:"✦";color:var(--accent)}
+
+/* slate：发丝线分隔 + 极简计数徽章 */
+[data-theme="slate"] .card{border-left:2px solid var(--accent)}
+[data-theme="slate"] .card-cat{font-family:"JetBrains Mono",monospace;font-size:10px}
+
 /* ============================================================
    动画：卡片入场
    ============================================================ */
@@ -368,13 +568,35 @@ a:hover{text-decoration:underline}
 <!-- 顶部栏 + 主题切换 -->
 <div class="topbar">
   <h2 class="brand">Skills<span class="dot">·</span>Note</h2>
-  <div class="theme-switcher">
-    <span class="label" style="font-size:12px;color:var(--muted);margin-right:6px">主题</span>
-    <span class="theme-dot active" data-t="sticky" title="便利贴" onclick="setTheme('sticky')">📝</span>
-    <span class="theme-dot" data-t="paper" title="牛皮纸本" onclick="setTheme('paper')">📔</span>
-    <span class="theme-dot" data-t="morandi" title="莫兰迪" onclick="setTheme('morandi')">🎨</span>
-    <span class="theme-dot" data-t="neon" title="霓虹深色" onclick="setTheme('neon')">🌃</span>
-    <span class="theme-dot" data-t="clean" title="极简白" onclick="setTheme('clean')">⚪</span>
+  <div class="theme-switcher" id="themeSwitcher">
+    <button class="theme-trigger" onclick="toggleThemePanel(event)">
+      <span class="swatch"></span>
+      <span id="themeName">便利贴</span>
+      <span class="caret">▼</span>
+    </button>
+    <div class="theme-panel" onclick="event.stopPropagation()">
+      <div class="theme-panel-group">
+        <p class="theme-panel-title">经典风格</p>
+        <div class="theme-panel-grid">
+          <div class="theme-opt active" data-t="sticky" onclick="setTheme('sticky')"><span class="dot"></span><span class="emoji">📝</span><span class="name">便利贴</span></div>
+          <div class="theme-opt" data-t="paper" onclick="setTheme('paper')"><span class="dot"></span><span class="emoji">📔</span><span class="name">牛皮纸本</span></div>
+          <div class="theme-opt" data-t="morandi" onclick="setTheme('morandi')"><span class="dot"></span><span class="emoji">🎨</span><span class="name">莫兰迪</span></div>
+          <div class="theme-opt" data-t="neon" onclick="setTheme('neon')"><span class="dot"></span><span class="emoji">🌃</span><span class="name">霓虹深色</span></div>
+          <div class="theme-opt" data-t="clean" onclick="setTheme('clean')"><span class="dot"></span><span class="emoji">⚪</span><span class="name">极简白</span></div>
+        </div>
+      </div>
+      <div class="theme-panel-group">
+        <p class="theme-panel-title">配色库精选 · ui-ux-pro-max</p>
+        <div class="theme-panel-grid">
+          <div class="theme-opt" data-t="sage" onclick="setTheme('sage')"><span class="dot"></span><span class="emoji">🌿</span><span class="name">鼠尾草</span></div>
+          <div class="theme-opt" data-t="ocean" onclick="setTheme('ocean')"><span class="dot"></span><span class="emoji">🌊</span><span class="name">海洋青</span></div>
+          <div class="theme-opt" data-t="terracotta" onclick="setTheme('terracotta')"><span class="dot"></span><span class="emoji">🧱</span><span class="name">陶土赤</span></div>
+          <div class="theme-opt" data-t="periwinkle" onclick="setTheme('periwinkle')"><span class="dot"></span><span class="emoji">💜</span><span class="name">长春花</span></div>
+          <div class="theme-opt" data-t="darkacademia" onclick="setTheme('darkacademia')"><span class="dot"></span><span class="emoji">📚</span><span class="name">暗黑学院</span></div>
+          <div class="theme-opt" data-t="slate" onclick="setTheme('slate')"><span class="dot"></span><span class="emoji">⚙️</span><span class="name">石板灰</span></div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -461,14 +683,32 @@ const CATEGORY_TREE = {
 
 let currentFilter = "all";
 
+/* 主题名映射（用于 trigger 按钮显示） */
+const THEME_NAMES = {
+  sticky:"便利贴", paper:"牛皮纸本", morandi:"莫兰迪", neon:"霓虹深色", clean:"极简白",
+  sage:"鼠尾草", ocean:"海洋青", terracotta:"陶土赤", periwinkle:"长春花",
+  darkacademia:"暗黑学院", slate:"石板灰"
+};
+
 /* 主题切换 + 持久化 */
 function setTheme(t){
   document.documentElement.setAttribute("data-theme", t);
-  document.querySelectorAll(".theme-dot").forEach(d =>
+  document.querySelectorAll(".theme-opt").forEach(d =>
     d.classList.toggle("active", d.dataset.t === t)
   );
+  const nameEl = document.getElementById("themeName");
+  if(nameEl) nameEl.textContent = THEME_NAMES[t] || t;
   try{ localStorage.setItem("sn-theme", t); }catch(e){}
 }
+/* 打开/关闭主题面板 */
+function toggleThemePanel(e){
+  if(e) e.stopPropagation();
+  document.getElementById("themeSwitcher").classList.toggle("open");
+}
+/* 点击面板外部关闭 */
+document.addEventListener("click", () => {
+  document.getElementById("themeSwitcher")?.classList.remove("open");
+});
 (function initTheme(){
   let t = "sticky";
   try{ t = localStorage.getItem("sn-theme") || "sticky"; }catch(e){}
