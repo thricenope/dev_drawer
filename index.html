@@ -664,6 +664,68 @@ const NOTES = [
     source: "notes/skills/general/vercel-react-best-practices.md"
   },
   {
+    title: "dbx",
+    category: "tools",
+    tags: ["database","gui","navicat","dbeaver","tauri","rust","ai","mcp","开源"],
+    summary: "20MB 单文件驾驭 70+ 种数据库，内置 AI SQL 助手 + MCP 协议。相当于把 Navicat/DBeaver 瘦身到 20MB，还让 AI 助手直接复用配好的连接查数据。Tauri 2 + Rust，零依赖，Apache-2.0 开源。",
+    links: {
+      "GitHub": "https://github.com/t8y2/dbx",
+      "README中文": "https://github.com/t8y2/dbx/blob/main/README.zh-CN.md"
+    },
+    source: "notes/tools/dbx.md"
+  },
+  {
+    title: "Playwright MCP",
+    category: "tools/mcp",
+    tags: ["mcp","playwright","browser","automation","microsoft","测试","官方"],
+    summary: "微软官方浏览器自动化 MCP。通过无障碍树与网页交互，不依赖像素/视觉，稳定且省 token。覆盖导航/点击/填表/截图/网络模拟/设备模拟，是浏览器自动化的事实标准 MCP。",
+    links: {
+      "GitHub": "https://github.com/microsoft/playwright-mcp",
+      "npm": "https://www.npmjs.com/package/@playwright/mcp"
+    },
+    source: "notes/tools/mcp/playwright.md"
+  },
+  {
+    title: "Chrome DevTools MCP",
+    category: "tools/mcp",
+    tags: ["mcp","chrome","devtools","debug","performance","google","官方"],
+    summary: "Google Chrome 团队官方 MCP，偏调试与性能分析（区别于 Playwright 偏端到端操作）。性能 trace 找瓶颈、网络请求监控、Console 报错、DOM/可访问性快照、截图。",
+    links: {
+      "GitHub": "https://github.com/ChromeDevTools/chrome-devtools-mcp"
+    },
+    source: "notes/tools/mcp/chrome-devtools.md"
+  },
+  {
+    title: "MySQL MCP",
+    category: "tools/mcp",
+    tags: ["mcp","mysql","database","sql","查询","社区"],
+    summary: "让 LLM 直接连 MySQL 跑 SQL 的 MCP（社区实现）。配好连接后 AI 可查 schema、执行查询，省掉手写 Mock 数据。默认建议只读，生产库连只读副本。",
+    links: {
+      "mcp-server-mysql": "https://github.com/benborla/mcp-server-mysql"
+    },
+    source: "notes/tools/mcp/mysql.md"
+  },
+  {
+    title: "Sequential Thinking MCP",
+    category: "tools/mcp",
+    tags: ["mcp","reasoning","thinking","官方","推理"],
+    summary: "MCP 官方顺序推理 server。给模型一个结构化的「思考脚手架」，可逐步推理、修订、回退、分支。适合多约束决策、需要边推边修正的难题。非数据查询，是推理辅助。",
+    links: {
+      "MCP Servers": "https://github.com/modelcontextprotocol/servers"
+    },
+    source: "notes/tools/mcp/sequential-thinking.md"
+  },
+  {
+    title: "Fetch MCP",
+    category: "tools/mcp",
+    tags: ["mcp","fetch","web","网页抓取","官方"],
+    summary: "MCP 官方网页抓取 server，URL → Markdown，省 token。ZCode/Claude Code 多已内置 WebFetch/WebSearch，通常不用装，纯 MCP 客户端用它补齐抓取能力。",
+    links: {
+      "MCP Servers": "https://github.com/modelcontextprotocol/servers"
+    },
+    source: "notes/tools/mcp/fetch.md"
+  },
+  {
     title: "用 Mermaid 替代 ASCII 连线图",
     category: "skills/tips",
     tags: ["mermaid","diagram","ascii","可视化","技巧"],
@@ -687,7 +749,9 @@ const CATEGORY_TREE = {
       "skills/tips":     "技巧"
     }
   },
-  "tools":     { label: "工具 / 网站", children: null },
+  "tools":     { label: "工具 / 网站", children: {
+    "tools/mcp": "MCP 服务"
+  } },
   "articles":  { label: "文章 / 资料", children: null },
   "snippets":  { label: "代码 / 技巧", children: null }
 };
